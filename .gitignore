@@ -10,6 +10,9 @@ lerna-debug.log*
 #LINTER
 .eslintrc.cjs
 
+#APIS & BACKEND
+api-imagenes.js
+
 #NODE
 node_modules
 dist
@@ -27,6 +30,7 @@ dist-ssr
 *.sln
 *.sw?
 
+#STUFF
 css-reset.css
 practica-backend.js
 practica-promises copy.js

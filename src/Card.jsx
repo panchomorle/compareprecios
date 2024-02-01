@@ -2,27 +2,26 @@
 import { useEffect, useState } from "react";
 import "./Card.css";
 
-const API_TEMPLATE = "http://localhost:8080?titulo=";
-
-
 export const Card = ({titulo, descripcion}) => {
   const [descprecios, reducirPrecio] = useState(descripcion);
   const [imagenUrl, setImagenUrl] = useState("");
 
-  useEffect(()=>{
+  const API_TEMPLATE = `http://localhost:8080?titulo=${titulo}`;
 
-    fetch(API_TEMPLATE+{titulo})
+  useEffect(()=>{
+    
+    fetch(API_TEMPLATE)
     .then(response => {
       if(response.ok){
         response.text()
         .then(res => {
-          console.log(res);
+          console.log("response de la api: "+res);
           setImagenUrl(res);
         })
       }
     })
 
-  },[titulo])
+  },[API_TEMPLATE])
 
 
     return(
