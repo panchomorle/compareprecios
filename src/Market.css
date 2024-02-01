@@ -1,0 +1,11 @@
+html{
+    background-color: #3e3e3e;
+    color: white;
+}
+
+.marketBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+}

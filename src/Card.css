@@ -1,0 +1,53 @@
+
+.cuadro{
+    width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+    border-color: bisque;
+    margin: 1em;
+}
+
+.cuadro-top{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.cuadro-bottom{
+    width: 100%;
+    height: 40%;
+    background-color: azure;
+
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+    padding: 0.2em 0.8em;
+}
+
+.cuadro-bottom h3{
+    color: coral;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 0.2em 0em;
+}
+
+.cuadro-bottom p{
+    color: black;
+    font-size: 0.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+    margin: 0.5em 0em;
+}
+
+.cuadro-top img{
+    max-width: 100%;
+    max-height: 100%;
+}
